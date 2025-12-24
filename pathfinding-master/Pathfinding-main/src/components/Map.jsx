@@ -47,7 +47,7 @@ function Map() {
         clearPath();
 
         // Place end node
-        if(info.rightButton || placeEnd) {
+        if(startNode && !info.ctrlKey) {
             if(e.layer?.id !== "selection-radius") {    
                 ui.current.showSnack("Please select a point inside the radius.", "info");
                 return;
@@ -79,7 +79,7 @@ function Map() {
                 return;
             }
             state.current.endNode = realEndNode;
-            
+            setPlaceEnd(false);
             return;
         }
 
