@@ -24,8 +24,7 @@ The goal of this project is to understand graph traversal and shortest path algo
 
 - Dijkstra’s Algorithm  
 - Breadth-First Search (BFS)  
-- Depth-First Search (DFS)  
-- (Add A* if implemented)
+- Depth-First Search (DFS) 
 
 ---
 
